@@ -1,0 +1,23 @@
+{
+    "name": "dbn-project",
+    "version": "1.0.0",
+    "description": "Упрощенная реализация Design By Numbers на TypeScript",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "start": "npm run build && http-server"
+    },
+    "keywords": [
+        "dbn",
+        "design-by-numbers",
+        "typescript",
+        "graphics"
+    ],
+    "author": "Aleksandr Ryzhikov",
+    "license": "MIT",
+    "devDependencies": {
+        "http-server": "^14.1.1",
+        "typescript": "^5.0.0"
+    }
+}
