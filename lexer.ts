@@ -6,7 +6,7 @@ export class Lexer {
     private line: number = 1;
     private column: number = 0;
 
-    construtor(input: string) {
+    constructor(input: string) {
         this.input = input;
     }
 
