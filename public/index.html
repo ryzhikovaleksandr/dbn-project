@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Design by Numbers - TypeScript</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <h1>Design By Numbers на TypeScript</h1>
+
+        <div class="container">
+            <div class="code-container">
+                <h2>Код DBN</h2>
+                <textarea id="code-input" placeholder="Введите код DBN здесь..."></textarea>
+                <button id="run-button">Запустить</button>
+            </div>
+
+            <div class="canvas-container">
+                <h2>Вывод</h2>
+                <canvas id="canvas" width="400" height="400"></canvas>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>Инструкция</h2>
+            <p>Доступные команды:</p>
+            <ul>
+                <li><code>pen размер</code> - устанавливает размер пера</li>
+                <li><code>paper значение</code> - устанавливает цвет фона (0-100, где 0 - черный, 100 - белый)</li>
+                <li><code>color значение</code> - устанавливает цвет пера (0-100, где 0 - черный, 100 - белый)</li>
+                <li><code>line x1 y1 x2 y2</code> - рисует линию от точки (x1, y1) до точки (x2, y2)</li>
+                <li><code>rect x1 y1 x2 y2</code> - рисует прямоугольник с левым нижним углом в (x1, y1) и правым верхним в (x2, y2)</li>
+                <li><code>circle x y radius</code> - рисует окружность с центром в точке (x, y) и заданным радиусом</li>
+                <li><code>// комментарий</code> - добавляет комментарий (игнорируется при выполнении)</li>
+            </ul>
+            <p>В этой упрощенной версии DBN координаты начинаются в левом нижнем углу холста (0, 0),
+            и увеличиваются вправо и вверх. Размер холста - 400x400 пикселей.</p>
+        </div>
+
+        <script type="module" src="./dist/index.js"></script>
+    </body>
+</html>
